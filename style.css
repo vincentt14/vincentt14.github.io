@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --header: #000;
+    --main-color: #110129;
+    --second-color: #15c4f0;
+    --third-color: #268ab2;
+    --fourth-color: #72748E;
+    --font: #fff;
+    --font-kedua: #333;
+}
+
+* {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 11rem;
+    scroll-behavior: smooth;
+}
+
+/* scrollbar kanan */
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 50px;
+    border: 1.5px solid var(--second-color);
+}
+
+body {
+    /* height: 1000px; */
+    background: var(--main-color);
+}
+
+/* section {
+    padding: 2rem 7%;
+} */
+
+/* button mulai*/
+.btn {
+    all: unset;
+    cursor: pointer;
+    position: relative;
+    border: none;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: -7px;
+    width: calc(100% + 12px);
+    height: calc(50% + 0.5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    bottom: -7px;
+    width: calc(100% + 12px);
+    height: calc(50% + 0.5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn div {
+    position: relative;
+    /* display: inline-block; */
+    overflow: hidden;
+    padding: .8rem 3rem;
+    background: var(--second-color);
+}
+
+.btn div::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 5px;
+    height: 5px;
+    background: var(--header);
+    transition: 0.4s;
+}
+
+.btn:hover div:after {
+    background: var(--font);
+}
+
+.btn div span {
+    position: absolute;
+    width: 120%;
+    height: 110%;
+    transform: translate(-120%, -10px);
+    background: var(--header);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+    transition: 0.4s;
+}
+
+.btn:hover div span {
+    transform: translate(-22%, -20%);
+}
+
+.btn div a {
+    position: relative;
+    text-decoration: none;
+    color: var(--font);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+
+/* button selesai */
+
+.header {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header .container {
+    display: flex;
+    height: 8rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20rem;
+}
+
+.header .container .logo {
+    width: 15rem;
+    height: 4rem;
+    background-size: cover;
+
+}
+
+.navbar ul {
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    display: inline-flex;
+}
+
+.navbar ul li a {
+    position: relative;
+    color: var(--font);
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin: 0 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.navbar ul li a:hover {
+    transition: .2s linear;
+}
+
+.navbar li a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%) scale(0);
+    -webkit-transform: translateX(-50%) scale(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--second-color);
+    -webkit-transition: 350ms;
+    transition: 350ms;
+}
+
+.header .navbar li a:hover:after {
+    transform: translateX(-50%) scale(1);
+    -webkit-transform: translateX(-50%) scale(1);
+}
+
+/* header selesai */
+
+/* hero mulai */
+.hero {
+    padding: 2rem 7%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3)), url(img/vapor.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+
+.hero .content {
+    width: 50rem;
+}
+
+.hero .content h3 {
+    color: var(--font);
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.hero .content h1 {
+    color: var(--font);
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    letter-spacing: 1px;
+}
+
+.hero .image {
+    /* max-width: 60rem; */
+    margin-left: 10rem;
+}
+
+.hero .image .kotak {
+    width: 55rem;
+    height: 40rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* hero selesai */
+
+/* about mulai */
+.about {
+    padding: 2rem 7%;
+    margin: 7rem 10rem;
+}
+
+.about .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .row .foto_diri {
+    display: grid;
+    grid-template-areas:
+        'foto1 foto1 foto2'
+        'foto1 foto1 foto3';
+    gap: 1.5rem;
+}
+
+.about .row .foto_diri .foto1 {
+    grid-area: foto1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/foto2.jpg);
+    background-size: cover;
+    width: 30rem;
+    min-height: 50rem;
+
+}
+
+.about .row .foto_diri .foto1 .content {
+    color: var(--font);
+    font-size: 1.5rem;
+    padding-top: 30rem;
+}
+
+.about .row .foto_diri .foto1 .content p {
+    margin: 1rem 0;
+}
+
+.about .row .foto_diri .foto1:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .7s ease;
+    opacity: 0;
+    background: rgba(83, 36, 192, 0.5);
+}
+
+.about .row .foto_diri .foto2 {
+    grid-area: foto2;
+    background-image: url(img/foto.jpg);
+    background-size: cover;
+    width: 25rem;
+    height: 25rem;
+}
+
+.about .row .foto_diri .foto3 {
+    grid-area: foto3;
+    background-image: url(img/dope.gif);
+    background-size: cover;
+    background-position: center;
+    width: 25rem;
+    height: 25rem;
+}
+
+.about .row .isi {
+    margin-left: 10rem;
+}
+
+.about .row .isi h3 {
+    color: var(--fourth-color);
+    font-size: 3rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.about .row .isi h1 {
+    color: var(--font);
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about .row .isi .kotak_about {
+    width: 8rem;
+    height: 0.5rem;
+    background-color: var(--second-color);
+}
+
+.about .row .isi p {
+    color: var(--font);
+    margin: 3rem 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+/* about selesai */
+
+/* projects mulai */
+.projects {
+    padding: 2rem 0;
+    margin: 7rem 0rem;
+}
+
+.projects .judul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.projects .judul h1 {
+    color: var(--font);
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* text-align: center; */
+}
+
+.projects .judul .kotakotakan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects .judul .kotakotakan .kotak_projects {
+    width: 12rem;
+    height: 0.5rem;
+    /* margin-left: 64.2rem; */
+    background-color: var(--second-color);
+}
+
+.projects .judul .kotakotakan div {
+    width: 12rem;
+    height: 0.5rem;
+}
+
+.projects .container {
+    display: grid;
+    grid-template-areas:
+        'project1 project1 project2 project3 project4 project4'
+        'project5 project6 project7 project7 project4 project4';
+    gap: 1rem;
+}
+
+.projects .container .content {
+    color: var(--font);
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.projects .container .content h2,
+p {
+    padding: 1rem 0;
+}
+
+.projects .container .project1 {
+    min-height: 30rem;
+    grid-area: project1;
+    background-image: url(img/projek4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .7s ease;
+    opacity: 0;
+    background: rgba(83, 36, 192, 0.6);
+}
+
+.projects .container .project2 {
+    min-height: 30rem;
+    grid-area: project2;
+    background-image: url(img/projek6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .container .project3 {
+    min-height: 30rem;
+    grid-area: project3;
+    background-image: url(img/projek1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .container .project4 {
+    min-height: 30rem;
+    grid-area: project4;
+    background-image: url(img/projek10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .container .project5 {
+    min-height: 30rem;
+    grid-area: project5;
+    background-image: url(img/projek3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .container .project6 {
+    min-height: 30rem;
+    grid-area: project6;
+    background-image: url(img/projek8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .container .project7 {
+    min-height: 30rem;
+    grid-area: project7;
+    background-image: url(img/projek7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .container .project1:hover .overlay {
+    opacity: 1;
+}
+
+.projects .container .project2:hover .overlay {
+    opacity: 1;
+}
+
+.projects .container .project3:hover .overlay {
+    opacity: 1;
+}
+
+.projects .container .project4:hover .overlay {
+    opacity: 1;
+}
+
+.projects .container .project5:hover .overlay {
+    opacity: 1;
+}
+
+.projects .container .project6:hover .overlay {
+    opacity: 1;
+}
+
+.projects .container .project7:hover .overlay {
+    opacity: 1;
+}
+
+/* projects selesai */
+
+/* contact mulai */
+.contact {
+    padding: 2rem 7%;
+    margin: 7rem 10rem;
+}
+
+.contact .contactme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.contact .contactme .noHP {
+    display: flex;
+    align-items: center;
+}
+
+.contact .contactme .email {
+    display: flex;
+    align-items: center;
+}
+
+.contact .contactme .alamat {
+    display: flex;
+    align-items: center;
+}
+
+.contact .contactme .isi {
+    margin-left: 30px;
+}
+
+.contact .contactme .aksen {
+    height: 35px;
+    width: 35px;
+    border: 2px solid var(--second-color);
+    transition: .7s;
+}
+
+.contact .contactme .aksen:hover {
+    transform: rotate(180deg);
+}
+
+.contact .contactme h3 {
+    color: var(--font);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.contact .contactme p {
+    color: var(--font);
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.contact .row .map {
+    width: 95rem;
+    height: 45rem;
+    object-fit: cover;
+    border: none;
+}
+
+.contact .row .contactform {
+    width: 70rem;
+    height: 50rem;
+}
+
+.contact .row .contactform h3 {
+    color: var(--font);
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact .row .contactform .kotak_contact {
+    width: 20rem;
+    height: 0.5rem;
+    background-color: var(--second-color);
+    margin-bottom: 2rem;
+}
+
+.contact .row .contactform form input {
+    width: 100%;
+    color: var(--font);
+    padding: 1.5rem;
+    margin: 0.7rem 0;
+    font-size: 1.7rem;
+    background: none;
+    border: 1px solid var(--font-kedua);
+}
+
+.contact .row .contactform form textarea {
+    width: 100%;
+    resize: none;
+    height: 10rem;
+    color: var(--font);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+    background: none;
+    border: 1px solid var(--font-kedua);
+
+}
+
+/* contact selesai */
+
+/* footer mulai */
+.footer {
+    padding: 2rem 7%;
+    background: var(--header);
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer .share {
+    margin-top: 2rem;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    text-decoration: none;
+    line-height: 5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.footer .share a:hover {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    transition: .4s;
+}
+
+.footer .credit {
+    font-size: 2rem;
+    color: var(--font);
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+.footer span {
+    color: var(--second-color);
+}
+
+/* footer selesai */
