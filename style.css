@@ -818,3 +818,125 @@ p {
         margin-left: -25px;
     }
 }
+
+@media (max-width:360px) {
+    html {
+        font-size: 45%;
+    }
+
+    .header .container {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .navbar .btn {
+        display: none;
+    }
+
+    /* .header .container ul li a {
+        display: none;
+    } */
+
+    .hero .row {
+        margin: 0 3rem;
+    }
+
+    .hero .row .content {
+        width: 45rem;
+    }
+
+    .about .row {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .about .row .foto_diri {
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .about .row .foto_diri .foto1 {
+        width: 25rem;
+        background-position-x: center;
+    }
+
+    .about .row .foto_diri .foto2 {
+        width: 22rem;
+        background-position-x: center;
+    }
+
+    .about .row .foto_diri .foto3 {
+        width: 22rem;
+        background-position-x: center;
+    }
+
+    .about .row .isi {
+        margin-left: -70px;
+        padding-top: 4rem;
+    }
+
+    .about .row .isi p {
+        margin: 1rem 0;
+    }
+
+    .about .row .isi .btn {
+        margin-top: 2rem;
+    }
+
+    .projects .container {
+        grid-template-areas: 'project1 project1 project2'
+            'project5 project4 project7'
+            'project6 project3 project3';
+        gap: 0.5rem;
+    }
+
+    .contact {
+        margin: 0 5px;
+    }
+
+    .contact .contactme {
+        margin: 0 3rem;
+        display: grid;
+        margin-bottom: 1rem;
+        grid-template-areas: 'noHp alamat''email alamat';
+
+    }
+
+    .contact .contactme .noHP {
+        grid-area: noHp;
+        padding: 1rem 0;
+    }
+
+    .contact .contactme .email {
+        grid-area: email;
+        padding: 1rem 0;
+    }
+
+    .contact .contactme .alamat {
+        grid-area: alamat;
+        padding: 1rem 0;
+    }
+
+    .contact .contactme .isi {
+        margin-left: 1rem;
+    }
+
+    .contact .row .map {
+        display: none;
+    }
+
+    .contact .row .contactform {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 3rem;
+
+    }
+}
