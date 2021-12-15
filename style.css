@@ -819,7 +819,7 @@ p {
     }
 }
 
-@media (max-width:360px) {
+@media (max-width:415px) {
     html {
         font-size: 45%;
     }
