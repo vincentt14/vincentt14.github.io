@@ -678,3 +678,143 @@ p {
 }
 
 /* footer selesai */
+
+
+/* media query */
+@media (max-width:991px) {
+
+    .header .container {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .header .container .logo {
+        display: none;
+    }
+
+    .hero {
+        padding: 0;
+        background-size: cover;
+    }
+
+    .about .row {
+        justify-content: space-around;
+    }
+
+    /* .about .row .foto_diri {
+        height: 20rem;
+        width: 20rem;
+    } */
+
+    .about .row .foto_diri1 {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .about .row .foto_diri2 {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .about .row .foto_diri3 {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .contact {
+        padding: 2rem 0;
+
+    }
+
+    .contact .contactme {
+        justify-content: space-around;
+    }
+
+    .contact .contactme .isi {
+        margin-left: 20px;
+    }
+
+    .contact .contactme h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact .contactme p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 47%;
+    }
+
+    .header .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .navbar .btn {
+        display: none;
+    }
+
+    /* .header .container ul li a {
+        display: none;
+    } */
+
+    .hero .row {
+        margin: 0 5rem;
+    }
+
+    .about .row {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .about .row .isi {
+        margin-left: -70px;
+        padding-top: 4rem;
+    }
+
+    .about .row .isi p {
+        margin: 1rem 0;
+    }
+
+    .about .row .isi .btn {
+        margin-top: 2rem;
+    }
+
+    .projects .container {
+        grid-template-areas: 'project1 project1 project2'
+            'project5 project4 project7'
+            'project6 project3 project3';
+        gap: 0.5rem;
+    }
+
+    .contact {
+        margin: 0 5px;
+    }
+
+    .contact .contactme {
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .contact .contactme .aksen {
+        height: 25px;
+        width: 25px;
+    }
+
+    .contact .contactme .isi {
+        margin-left: 5px;
+    }
+
+    .contact .row .map {
+        width: 25rem;
+        height: 45rem;
+    }
+
+    .contact .row .contactform {
+        margin-left: -25px;
+    }
+}
