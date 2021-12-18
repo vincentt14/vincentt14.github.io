@@ -746,15 +746,15 @@ p {
         background-size: cover;
     }
 
-    .about {
+    /* .about {
         padding: 0;
-    }
+    } */
 
     .about .row {
         justify-content: space-around;
     }
 
-    .about .row .foto_diri .foto1 {
+    /* .about .row .foto_diri .foto1 {
         width: 25rem;
         height: 25rem;
         background-position-x: center;
@@ -770,7 +770,7 @@ p {
         width: 22rem;
         height: 22rem;
         background-position-x: center;
-    }
+    } */
 
     .contact {
         padding: 2rem 0;
@@ -879,9 +879,9 @@ p {
         margin: 0 5rem;
     }
 
-    .about {
+    /* .about {
         padding: 5rem;
-    }
+    } */
 
     .about .row {
         justify-content: space-between;
@@ -970,9 +970,9 @@ p {
         width: 45rem;
     }
 
-    .about {
+    /* .about {
         padding: 4rem;
-    }
+    } */
 
     .about .row {
         justify-content: space-between;
