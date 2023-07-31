@@ -10211,7 +10211,7 @@ class ImageResponse {
 
 /***/ }),
 
-/***/ 7336:
+/***/ 4716:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -11300,7 +11300,7 @@ function removeTrailingSlash(route) {
 
 
 const serverExports = {
-    NextRequest: (__webpack_require__(7336).NextRequest),
+    NextRequest: (__webpack_require__(4716).NextRequest),
     NextResponse: (__webpack_require__(4415)/* .NextResponse */ .x),
     ImageResponse: (__webpack_require__(9374)/* .ImageResponse */ .E),
     userAgentFromString: (__webpack_require__(3889).userAgentFromString),
