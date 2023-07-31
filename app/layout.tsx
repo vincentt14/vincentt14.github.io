@@ -11,9 +11,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Vincent | Portfolio",
   description: "Get to know more about my skills and expertise.",
-  icons: {
-    icon: "/favicon.ico"
-  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
