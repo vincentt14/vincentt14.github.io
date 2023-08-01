@@ -66,7 +66,7 @@ export const Navbar = () => {
         <div className="container">
           <div className="flex items-center justify-between relative">
             <div className="md:px-4">
-              <Link to="home" spy={true} smooth={true} offset={0} duration={500} className="flex cursor-pointer text-white font-bold text-lg py-6 item items-center justify-center gap-2">
+              <Link to="home" spy={true} smooth={true} offset={0} duration={500} className="flex cursor-pointer text-white font-bold text-lg py-5 md:py-6 item items-center justify-center gap-2">
                 Vincent.
               </Link>
             </div>
@@ -94,7 +94,13 @@ export const Navbar = () => {
                   ))}
 
                   <li className="group">
-                    <CustomButton btnType="submit" title="Resume" containerStyles="ml-5 lg:ml-0 border-borderColor bg-tertiary hover:border-primary lg:my-0 py-[10px]" textStyles="text-white" onClick={() => downloadFile(cv_file_url)} />
+                    <CustomButton
+                      btnType="submit"
+                      title="Resume"
+                      containerStyles="ml-5 lg:ml-1 border-borderColor bg-tertiary hover:border-primary !mt-3 !mb-0 lg:!my-0 py-[10px]"
+                      textStyles="text-white"
+                      onClick={() => downloadFile(cv_file_url)}
+                    />
                   </li>
                 </ul>
               </nav>

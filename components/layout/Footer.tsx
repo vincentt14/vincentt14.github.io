@@ -81,9 +81,12 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="mb-5 w-full flex-col place-items-center font-medium md:flex md:w-1/3">
             <ul>
-              <h2 className="py-1 text-4xl font-bold text-white">Vincent.</h2>
-              <hr className="w-20 my-3 p-1 bg-black border border-borderColor rounded-sm" />
-              <h3 className="my-4 text-2xl font-bold text-white">Contact Me</h3>
+              <div className="flex items-center gap-x-2">
+                <div className="border border-borderColor w-12 h-12 rounded-sm bg-contain bg-center logo" />
+                <h2 className="py-1 text-4xl font-bold text-white">Vincent.</h2>
+              </div>
+              <hr className="w-32 my-3 p-1 bg-black border border-borderColor rounded-sm" />
+              <h3 className="mb-4 mt-5 text-2xl font-bold text-white">Contact Me</h3>
               {contacts.map((contact) => (
                 <div key={contact.target} className="flex gap-2 my-2">
                   <p className="py-2 text-primary">{contact.label}:</p>
@@ -114,7 +117,7 @@ export const Footer = () => {
                   Download
                 </div>
               </li>
-              <li className="mt-14">
+              <li className="mt-10 md:mt-14">
                 <p className="mb-2 inline-block font-light text-primary">© 2023 Vincent</p>
                 <div className="flex gap-x-2">
                   {stacks.map((stack) => (

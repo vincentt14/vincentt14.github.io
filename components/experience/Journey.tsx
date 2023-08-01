@@ -2,21 +2,21 @@ export const Journey = () => {
   const experiences = [
     {
       id: 3,
-      place: "Universitas Multimedia Nusantara",
+      place: "Multimedia Nusantara University",
       title: "Bachelor's Degree | Informatics",
       timespan: "Aug 2019 - Jul 2023",
     },
     {
       id: 2,
       place: "Dicoding Academy",
-      title: "Studi Independen | Front-End and React",
+      title: "Study Independent | Front-End and React",
       timespan: "Aug 2022 - Dec 2022",
     },
     {
       id: 1,
       place: "Udemy",
       title: "Modern React with Redux",
-      timespan: "Sep 2022 - Dec 2022",
+      timespan: "Sep 2022 - Nov 2022",
     },
   ];
 

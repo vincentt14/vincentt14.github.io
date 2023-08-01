@@ -102,7 +102,7 @@ export const ProjectLists = () => {
       ],
     },
     {
-      name: "Open Space",
+      name: "OpenSpace",
       description:
         "Open Space App is a web-based twitter look a like application where users can create some threads add comments and see parents threads. – Build using React.js, Redux, Eslint - Proptypes, Testing with Jest and Cypress. with Dicoding API | features : login, register, create talk, view talk parent, add comments.",
       title: "Visit Open Space? ☄️",
@@ -184,7 +184,7 @@ export const ProjectLists = () => {
             <div className="flex flex-col px-5">
               <div className="flex items-center justify-between my-4">
                 <p className="font-bold text-justify text-base lg:text-xl">{project.name}</p>
-                <div className="flex gap-x-2">
+                <div className="flex gap-x-1 lg:gap-x-2">
                   {project.stacks.map((stack) => (
                     <div key={stack.name} className="w-11 h-11 bg-black border border-borderColor rounded-md flex items-center justify-center">
                       {stack.logo}

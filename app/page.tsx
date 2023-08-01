@@ -22,7 +22,7 @@ export default function Home() {
             <Status />
           </div>
           <div className="w-full px-4 pt-4 self-center lg:w-1/2 border-2 shadow-lg border-borderColor rounded-md bg-secondary">
-            <Lottie animationData={astro} style={{ width: "300px", height: "300px" }} className="mx-auto blur-none" />
+            <Lottie animationData={astro} className="mx-auto blur-none h-[300px] w-[300px] lg:h-[350px] lg:w-[350px]" />
           </div>
         </div>
       </section>
