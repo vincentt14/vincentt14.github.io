@@ -29,7 +29,7 @@ export const Journey = () => {
 
       <div className="grid lg:grid-cols-2 my-4 gap-2">
         {experiences.map((experience) => (
-          <div key={experience.place} className=" bg-tertiary border border-borderColor rounded-md">
+          <div key={experience.place} className="bg-tertiary border border-borderColor rounded-md">
             <p className="text-justify font-bold text-white text-lg col-span-2 p-3">
               {experience.place}
               <span className="block font-normal text-slate-200 mt-1 text-base">{experience.title}</span>

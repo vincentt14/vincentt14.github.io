@@ -51,7 +51,7 @@ export const Info = () => {
         <p className="my-3">Hello! My name is Vincent, a Web Developer based in Indonesia.</p>
 
         <p className="my-3">
-          I am a Fresh Graduate Informatics student who pursues and specializes in the field of web development. Someone who has a high motivation and passion in the studies of learning or building dynamic and interactive websites.
+          I am a Fresh Graduate Informatics student who pursues and specializes in the field of web development. Someone who has a high motivation and passion in the studies of learning and building dynamic interactive websites.
         </p>
 
         <p className="my-3">
