@@ -15,19 +15,19 @@ export const Info = () => {
     {
       href: "https://github.com/vincentt14",
       name: "GitHub",
-      label: "Go to my Github Profile 🚀"
+      label: "Go to my Github Profile 🚀",
     },
     {
       href: "https://www.linkedin.com/in/vincent-240775185/",
       name: "LinkedIn",
-      label: "Go to my LinkedIn Profile ⚡"
+      label: "Go to my LinkedIn Profile ⚡",
     },
   ];
 
   const instagram = {
     href: "https://www.instagram.com/_vincenttlim",
     name: "Instagram",
-    label: "Go to my Instagram Profile 🪐"
+    label: "Go to my Instagram Profile 🪐",
   };
 
   const onHandleClick = (contact: IContact) => {
@@ -55,7 +55,9 @@ export const Info = () => {
         </p>
 
         <p className="my-3">
-          I&apos;m currently focused on learning Front-End web development - <span className="text-white">Next.js</span>. I am also a freelancer while looking for a job.
+          I&apos;m currently working on <span className="text-white">E2EE</span> Password Management Project using <span className="text-white">AES & RSA Algorithm</span> called <span className="text-white">CORE</span>. I also accept
+          projects with a good price, feel free to contact me.
+          {/* I&apos;m currently focused on learning Front-End web development - <span className="text-white">Next.js</span>. I am also a freelancer while looking for a job. */}
         </p>
       </div>
       <hr className="w-36 my-3 p-1 bg-tertiary border border-borderColor rounded-sm" />
