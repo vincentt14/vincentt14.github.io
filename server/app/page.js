@@ -291,12 +291,12 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_
 
 /***/ }),
 
-/***/ 5200:
+/***/ 3514:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 345));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 34));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7595))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7595));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 34))
 
 /***/ }),
 
@@ -381,17 +381,27 @@ const Info = ()=>{
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
                         className: "my-3",
-                        children: "I am a Fresh Graduate Informatics student who pursues and specializes in the field of web development. Someone who has a high motivation and passion in the studies of learning or building dynamic and interactive websites."
+                        children: "I am a Fresh Graduate Informatics student who pursues and specializes in the field of web development. Someone who has a high motivation and passion in the studies of learning and building dynamic interactive websites."
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                         className: "my-3",
                         children: [
-                            "I'm currently focused on learning Front-End web development - ",
+                            "I'm currently working on ",
                             /*#__PURE__*/ jsx_runtime_.jsx("span", {
                                 className: "text-white",
-                                children: "Next.js"
+                                children: "E2EE"
                             }),
-                            ". I am also a freelancer while looking for a job."
+                            " Password Management Project using ",
+                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                className: "text-white",
+                                children: "AES & RSA Algorithm"
+                            }),
+                            " called ",
+                            /*#__PURE__*/ jsx_runtime_.jsx("span", {
+                                className: "text-white",
+                                children: "CORE"
+                            }),
+                            ". I also accept projects with a good price, feel free to contact me."
                         ]
                     })
                 ]
@@ -439,7 +449,7 @@ const Status = ()=>{
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "col-1 col-span-1 flex items-center justify-center text-2xl font-bold text-white",
-                        children: "13"
+                        children: "16"
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: "col-2 col-span-2",
@@ -674,6 +684,10 @@ const BackEndStacks = ()=>{
             title: "PHP",
             icon: /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* SiPhp */.sfN, {})
         },
+        {
+            title: "PostgreSQL",
+            icon: /*#__PURE__*/ jsx_runtime_.jsx(index_esm/* SiPostgresql */.u4B, {})
+        },
         // {
         //   title: "Express",
         //   icon: <SiExpress />,
@@ -823,22 +837,28 @@ const Skills = ()=>{
 const Journey = ()=>{
     const experiences = [
         {
-            id: 3,
-            place: "Universitas Multimedia Nusantara",
-            title: "Bachelor's Degree | Informatics",
-            timespan: "Aug 2019 - Jul 2023"
-        },
-        {
-            id: 2,
+            id: 4,
             place: "Dicoding Academy",
-            title: "Studi Independen | Front-End and React",
+            title: "Study Independent | Front-End & React",
             timespan: "Aug 2022 - Dec 2022"
         },
         {
-            id: 1,
+            id: 3,
             place: "Udemy",
             title: "Modern React with Redux",
             timespan: "Sep 2022 - Dec 2022"
+        },
+        {
+            id: 2,
+            place: "Hashmicro",
+            title: "Software Implementation Consultant",
+            timespan: "Feb 2022 - Jun 2022"
+        },
+        {
+            id: 1,
+            place: "Multimedia Nusantara University",
+            title: "Bachelor's Degree | Computer Science",
+            timespan: "Aug 2019 - Jul 2023"
         }
     ];
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
@@ -859,7 +879,7 @@ const Journey = ()=>{
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: "grid lg:grid-cols-2 my-4 gap-2",
                 children: experiences.map((experience)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: " bg-tertiary border border-borderColor rounded-md",
+                        className: "bg-tertiary border border-borderColor rounded-md",
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                             className: "text-justify font-bold text-white text-lg col-span-2 p-3",
                             children: [
@@ -1133,7 +1153,7 @@ const ProjectLists = ()=>{
             ]
         },
         {
-            name: "Open Space",
+            name: "OpenSpace",
             description: "Open Space App is a web-based twitter look a like application where users can create some threads add comments and see parents threads. – Build using React.js, Redux, Eslint - Proptypes, Testing with Jest and Cypress. with Dicoding API | features : login, register, create talk, view talk parent, add comments.",
             title: "Visit Open Space? ☄️",
             link: "https://open-space-app-bice.vercel.app/",
@@ -1253,7 +1273,7 @@ const ProjectLists = ()=>{
                                                 children: project.name
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                                className: "flex gap-x-2",
+                                                className: "flex gap-x-1 lg:gap-x-2",
                                                 children: project.stacks.map((stack)=>/*#__PURE__*/ jsx_runtime_.jsx("div", {
                                                         className: "w-11 h-11 bg-black border border-borderColor rounded-md flex items-center justify-center",
                                                         children: stack.logo
@@ -1315,11 +1335,7 @@ function Home() {
                             className: "w-full px-4 pt-4 self-center lg:w-1/2 border-2 shadow-lg border-borderColor rounded-md bg-secondary",
                             children: /*#__PURE__*/ jsx_runtime_.jsx(build/* default */.ZP, {
                                 animationData: astro_namespaceObject,
-                                style: {
-                                    width: "300px",
-                                    height: "300px"
-                                },
-                                className: "mx-auto blur-none"
+                                className: "mx-auto blur-none h-[300px] w-[300px] lg:h-[350px] lg:w-[350px]"
                             })
                         })
                     ]
@@ -1485,15 +1501,23 @@ const Footer = ()=>{
                         className: "mb-5 w-full flex-col place-items-center font-medium md:flex md:w-1/3",
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("ul", {
                             children: [
-                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                                    className: "py-1 text-4xl font-bold text-white",
-                                    children: "Vincent."
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                    className: "flex items-center gap-x-2",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                                            className: "border border-borderColor w-12 h-12 rounded-sm bg-contain bg-center logo"
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
+                                            className: "py-1 text-4xl font-bold text-white",
+                                            children: "Vincent."
+                                        })
+                                    ]
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("hr", {
-                                    className: "w-20 my-3 p-1 bg-black border border-borderColor rounded-sm"
+                                    className: "w-32 my-3 p-1 bg-black border border-borderColor rounded-sm"
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                                    className: "my-4 text-2xl font-bold text-white",
+                                    className: "mb-4 mt-5 text-2xl font-bold text-white",
                                     children: "Contact Me"
                                 }),
                                 contacts.map((contact)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -1553,7 +1577,7 @@ const Footer = ()=>{
                                     })
                                 }),
                                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("li", {
-                                    className: "mt-14",
+                                    className: "mt-10 md:mt-14",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                             className: "mb-2 inline-block font-light text-primary",
@@ -1663,7 +1687,7 @@ const Navbar = ()=>{
                                 smooth: true,
                                 offset: 0,
                                 duration: 500,
-                                className: "flex cursor-pointer text-white font-bold text-lg py-6 item items-center justify-center gap-2",
+                                className: "flex cursor-pointer text-white font-bold text-lg py-5 md:py-6 item items-center justify-center gap-2",
                                 children: "Vincent."
                             })
                         }),
@@ -1709,7 +1733,7 @@ const Navbar = ()=>{
                                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_shared_CustomButton__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
                                                     btnType: "submit",
                                                     title: "Resume",
-                                                    containerStyles: "ml-5 lg:ml-0 border-borderColor bg-tertiary hover:border-primary lg:my-0 py-[10px]",
+                                                    containerStyles: "ml-5 lg:ml-1 border-borderColor bg-tertiary hover:border-primary !mt-3 !mb-0 lg:!my-0 py-[10px]",
                                                     textStyles: "text-white",
                                                     onClick: ()=>downloadFile(cv_file_url)
                                                 })
@@ -1832,10 +1856,17 @@ const Footer_e0 = Footer_proxy["Footer"];
 
 const metadata = {
     title: "Vincent | Portfolio",
-    description: "Get to know more about my skills and expertise.",
-    icons: {
-        icon: "/favicon.ico"
-    }
+    description: "A Web Developer with 14 month of experience, get to know more about my skills and expertise.",
+    keywords: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Portfolio",
+        "FrontEnd",
+        "BackEnd",
+        "Web Developer"
+    ]
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ jsx_runtime_.jsx("html", {
