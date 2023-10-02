@@ -1,7 +1,7 @@
 "use client";
 
 import { toast } from "react-hot-toast";
-import { SiLaravel, SiPhp, SiFirebase, SiPlanetscale, SiExpress, SiNestjs } from "react-icons/si";
+import { SiLaravel, SiPhp, SiFirebase, SiPlanetscale, SiExpress, SiNestjs, SiPostgresql } from "react-icons/si";
 
 export const BackEndStacks = () => {
   const stacks = [
@@ -12,6 +12,10 @@ export const BackEndStacks = () => {
     {
       title: "PHP",
       icon: <SiPhp />,
+    },
+    {
+      title: "PostgreSQL",
+      icon: <SiPostgresql />,
     },
     // {
     //   title: "Express",
