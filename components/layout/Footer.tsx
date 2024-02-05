@@ -118,7 +118,7 @@ export const Footer = () => {
                 </div>
               </li>
               <li className="mt-10 md:mt-14">
-                <p className="mb-2 inline-block font-light text-primary">© 2023 Vincent</p>
+                <p className="mb-2 inline-block font-light text-primary">© 2024 Vincent</p>
                 <div className="flex gap-x-2">
                   {stacks.map((stack) => (
                     <div key={stack.name} className="w-11 h-11 bg-black border border-borderColor rounded-md flex items-center justify-center">

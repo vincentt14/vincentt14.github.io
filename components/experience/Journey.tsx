@@ -2,15 +2,15 @@ export const Journey = () => {
   const experiences = [
     {
       id: 4,
-      place: "Dicoding Academy",
-      title: "Study Independent | Front-End & React",
-      timespan: "Aug 2022 - Dec 2022",
+      place: "Indomaret Group",
+      title: "IT Specialist SD 3",
+      timespan: "Jan 2024 - Present",
     },
     {
       id: 3,
-      place: "Udemy",
-      title: "Modern React with Redux",
-      timespan: "Sep 2022 - Dec 2022",
+      place: "Dicoding Academy",
+      title: "Study Independent | Front-End & React",
+      timespan: "Aug 2022 - Dec 2022",
     },
     {
       id: 2,
